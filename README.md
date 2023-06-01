@@ -33,7 +33,7 @@ Role : Coder
 선정 프로젝트:
 https://github.com/FareedKhan-dev/yolov7-face-blur
 
-선정한 프로젝트는 학습된 pytorch 모델을 이용하여 input으로 들어온 이미지나 비디오에서의 얼굴을 detect하여 blur처리한 결과를 output으로 만드는 코드입니다.
+선정한 프로젝트는 학습된 pytorch 모델을 이용하여 input으로 들어온 이미지나 비디오에서 사람의 얼굴을 detect하여 blur처리한 결과를 output으로 만드는 코드입니다.
 
 
 # Results
@@ -45,8 +45,9 @@ https://github.com/FareedKhan-dev/yolov7-face-blur
 # Installation
 ---
 
-**주의!** 
- 설치 경로에 한글이 포함되어 있다면 정상작동 하지 않으므로 영문으로만 된 경로를 설정하여 설치해주시기 바랍니다.
+**Warning!** 
+
+설치 경로에 한글이 포함되어 있다면 정상작동 하지 않으므로 영문으로만 된 경로를 설정하여 설치해주시기 바랍니다.
 
 ---
 Original Introduction
@@ -59,7 +60,7 @@ Original Introduction
 
 ---
 
-## 요구사항
+## Requirements
 
 git(Updated)
 
@@ -67,10 +68,9 @@ pip(Updated)
 
 python 3.9.X ( 원 프로젝트는 3.9.0을 요구하였음)
 
-기타 요구 패키지는 requirements.txt에 담겨 있습니다. 설치 과정에서 설치할 것이고, pip를 이용하지 않는다면 참고하여 설치해주시면 됩니다.
+If you do not use pip, read 'requirements.txt' and install require packages.
 
-
-## 설치방법
+## Setting Project
 
 -----
 
@@ -87,7 +87,7 @@ Create Virtual Environment of Python and Activate the Environment.
     
 -----
 
-Clone the repository and move to directory
+Clone this project
 
     git clone https://github.com/dhun0103/opensw23-JJJJ
     
@@ -105,7 +105,8 @@ If you want to use GPU, you have to install additional requirements.
 
     pip install -r requirements_gpu.txt (To use GPU, Not Tested)
 
-실행할 모델을 준비합니다. 아래 표는 원본 프로젝트에서 가져왔습니다. 본 문서에 언급된 모델 이외에는 테스트 하지 않았습니다.
+
+Prepare Model file from the table below. Click link in 'google' or 'baidu' column.
 
 | Models           |  Test Size | Easy  | Medium | Hard  | FLOPs (B) @640 | Google | Baidu |
 | -----------------| ---------- | ----- | ------ | ----- | -------------- | ------ | ----- |
@@ -119,17 +120,13 @@ If you want to use GPU, you have to install additional requirements.
 | yolov7-w6+TTA    | 1280       | 96.9  | 95.8   | 90.4  |  89.0          | [google](https://drive.google.com/file/d/1U_kH7Xa_9-2RK2hnyvsyMLKdYB0h4MJS/view?usp=sharing) | - |
 
 
-## 실행과정
+## Running Project
 
-Terminal 또는 bash가 clone한 프로젝트 경로에 있도록 설정해줍니다
+Basic Command Format
 
-    …/opensw23-JJJJ
+    python detect.py --weights model.pt --blurratio 50 --hidedetarea --device cpu --source image.jpg
 
-기본적인 명령어 Format은 다음과 같습니다.
-
-    python detect.py --weights model.pt --blurratio 50 --device cpu --source image.jpg
-
-입력 인자(옵션) 설명 원문 및 번역
+Explain Argument(Original & Korean Translate)
     
     --weights : contains your downloaded model from the above table
     위 테이블에서 다운로드한 모델을 입력합니다
@@ -137,17 +134,26 @@ Terminal 또는 bash가 clone한 프로젝트 경로에 있도록 설정해줍�
     --bluurratio : to determine the strength of blurring, default value is 20
     얼마나 blur할 것인지 수치로 결정합니다. 기본값은 20입니다 (0~100)
     
+    --hidedetarea
+    만약 blur처리된 얼굴 부분의 테두리 표기를 원치 않는다면 이 옵션을 추가하여 입력합니다. 입력하지 않아도 되는 인자 입니다.
+    
     --device : either cpu or 0 in case of gpu.
     cpu 또는 0을 입력하여 cpu나 gpu 사용을 결정합니다.
     
     --source : containes your images (png, jpg etc) or video (mp4 etc)
     이미지나 비디오를 입력합니다.
+ 
+ 
+If you run the code, output may located in
+
+    .../opensw23-JJJ/runs/detect/...
+
 
 ## Sample Input&Output
 
-샘플에 사용된 모델 파일, 인풋이미지, 아웃풋 이미지는 프로젝트 최상위 Directory에 위치 해 있습니다.
+All samples located in `.../opensw23-JJJJ/samples`
 
-input Model
+input model
 
     yolov7-lite-t.pt
 
@@ -155,13 +161,10 @@ input source
 
     SmileFaces.jpg
 
-output directory
-
-    .../opensw23-JJJ/runs/
-
 Input Command
 
     python detect.py --weights yolov7-lite-t.pt --blurratio 50 --device cpu --source SmileFaces.jpg
+    
 
 ### input
 

@@ -59,73 +59,116 @@ Original Introduction
 
 ---
 
-요구사항
----
+## 요구사항
+
 git(Updated)
 
 pip(Updated)
 
 python 3.9.X ( 원 프로젝트는 3.9.0을 요구하였음)
 
-\*기타 요구 패키지는 requirements.txt에 담겨 있음. pip를 이용하지 않는다면 참고하여 설치해주시면 됩니다.
+기타 요구 패키지는 requirements.txt에 담겨 있습니다. 설치 과정에서 설치할 것이고, pip를 이용하지 않는다면 참고하여 설치해주시면 됩니다.
 
 
 ## 설치방법
 
-1. (Option) Create Virtual Environment of Python and Activate the Environment.
+-----
+
+### \*Option 
+Create Virtual Environment of Python and Activate the Environment.
 
 (Recommended, If you don’t want to disturb python packages)
 
-python3 -m venv yolov7objblurring
+    python3 -m venv yolov7objblurring
 
-call yolov7objblurring/Scripts/activate
+ and activate virtual environment
+ 
+    call yolov7objblurring/Scripts/activate
+    
+-----
 
-2. Clone the repository.
+Clone the repository and move to directory
 
-git clone https://github.com/dhun0103/opensw23-JJJJ
+    git clone https://github.com/dhun0103/opensw23-JJJJ
+    
+and move to project Directory
 
-cd opensw23-JJJJ
+    cd opensw23-JJJJ
+      
+Install requirements with mentioned command below
 
-3. Install requirements with mentioned command below.
+    pip install -r requirements.txt
 
-pip install -r requirements.txt
+##### Option
 
-4. (Option) If you want to use GPU, you have to install additional requirements.
+If you want to use GPU, you have to install additional requirements.
 
-pip install -r requirements_gpu.txt (To use GPU, Not Tested)
+    pip install -r requirements_gpu.txt (To use GPU, Not Tested)
 
-5. 실행할 모델을 준비합니다. 아래 표는 출처 프로젝트에서 가져왔으며 사용 자체는 어떠한 모델을 사용하여도 상관없습니다.
+실행할 모델을 준비합니다. 아래 표는 원본 프로젝트에서 가져왔습니다. 본 문서에 언급된 모델 이외에는 테스트 하지 않았습니다.
+
+| Models           |  Test Size | Easy  | Medium | Hard  | FLOPs (B) @640 | Google | Baidu |
+| -----------------| ---------- | ----- | ------ | ----- | -------------- | ------ | ----- |
+| yolov7-lite-t    | 640        | 88.7  | 85.2   | 71.5  |  0.8           | [google](https://drive.google.com/file/d/1HNXd9EdS-BJ4dk7t1xJDFfr1JIHjd5yb/view?usp=sharing) | [gsmn](https://pan.baidu.com/s/1oxlJVveUgHUQs4UiR26aCw) |
+| yolov7-lite-s    | 640        | 92.7  | 89.9   | 78.5  |  3.0           | [google](https://drive.google.com/file/d/1MIC5vD4zqRLF_uEZHzjW_f-G3TsfaOAf/view?usp=sharing) | [3sp4](https://pan.baidu.com/s/1f_DD1gZ1AUGLFKHoPNq10Q) |
+| yolov7-tiny      | 640        | 94.7  | 92.6   | 82.1  |  13.2          | [google](https://drive.google.com/file/d/1Mona-I4PclJr5mjX1qb8dgDeMpYyBcwM/view?usp=sharing) | [aujs](https://pan.baidu.com/s/1IzHLQc2RbPyuDgEqgY8hUg) |
+| yolov7s          | 640        | 94.8  | 93.1   | 85.2  |  16.8          | [google](https://drive.google.com/file/d/1_ZjnNF_JKHVlq41EgEqMoGE2TtQ3SYmZ/view?usp=sharing) | [w72z](https://pan.baidu.com/s/1fZfZTH7qSdN-0zTk5iCcnA) |
+| yolov7           | 640        | 96.9  | 95.5   | 88.0  |  103.4         | [google](https://drive.google.com/file/d/1oIaGXFd4goyBvB1mYDK24GLof53H9ZYo/view?usp=sharing) | [jrj6](https://pan.baidu.com/s/1PiEnSaogvjkNvRLHctBz9A) |
+| yolov7+TTA       | 640        | 97.2  | 95.8   | 87.7  |  103.4         | [google](https://drive.google.com/file/d/1oIaGXFd4goyBvB1mYDK24GLof53H9ZYo/view?usp=sharing) | [jrj6](https://pan.baidu.com/s/1PiEnSaogvjkNvRLHctBz9A) |
+| yolov7-w6        | 960        | 96.4  | 95.0   | 88.3  |  89.0          | [google](https://drive.google.com/file/d/1U_kH7Xa_9-2RK2hnyvsyMLKdYB0h4MJS/view?usp=sharing) | - |
+| yolov7-w6+TTA    | 1280       | 96.9  | 95.8   | 90.4  |  89.0          | [google](https://drive.google.com/file/d/1U_kH7Xa_9-2RK2hnyvsyMLKdYB0h4MJS/view?usp=sharing) | - |
+
 
 ## 실행과정
 
-기본 실행 명령어는 다음과 같습니다.
+Terminal 또는 bash가 clone한 프로젝트 경로에 있도록 설정해줍니다
 
------
+    …/opensw23-JJJJ
 
-python detect.py --weights selected_model.pt --blurratio 50 --device cpu --source your_image.jpg
+기본적인 명령어 Format은 다음과 같습니다.
 
------
+    python detect.py --weights model.pt --blurratio 50 --device cpu --source image.jpg
 
-입력 인자(옵션) 설명
-1. --weights : contains your downloaded model from the above table
-2. --bluurratio : to determine the strength of blurring, default value is 20
-3. --device : either cpu or 0 in case of gpu.
-4. --source : containes your images (png, jpg etc) or video (mp4 etc)
+입력 인자(옵션) 설명 원문 및 번역
+    
+    --weights : contains your downloaded model from the above table
+    위 테이블에서 다운로드한 모델을 입력합니다
+   
+    --bluurratio : to determine the strength of blurring, default value is 20
+    얼마나 blur할 것인지 수치로 결정합니다. 기본값은 20입니다 (0~100)
+    
+    --device : either cpu or 0 in case of gpu.
+    cpu 또는 0을 입력하여 cpu나 gpu 사용을 결정합니다.
+    
+    --source : containes your images (png, jpg etc) or video (mp4 etc)
+    이미지나 비디오를 입력합니다.
 
-Terminal 또는 bash가 해당 경로에 있도록 설정해줍니다
+## Sample Input&Output
 
-…/opensw23-JJJJ
+샘플에 사용된 모델 파일, 인풋이미지, 아웃풋 이미지는 프로젝트 최상위 Directory에 위치 해 있습니다.
 
-아래 코드는 실행 예시 코드입니다. model 로 yolov7-lite-t.pt를 사용하였으며 input image로 SmileFaces.jpeg를 사용하였습니다.
+input Model
 
------
+    yolov7-lite-t.pt
 
-python detect.py --weights yolov7-lite-t.pt --blurratio 50 --device cpu --source Smile
-Faces.jpeg
+input source 
 
------
+    SmileFaces.jpg
 
-위 샘플 입력을 활용하였을때 다음과 같은 이미지 결과가 나옵니다. 결과는 프로젝트 내 run 폴더 내부에 저장됩니다.
+output directory
 
+    .../opensw23-JJJ/runs/
+
+Input Command
+
+    python detect.py --weights yolov7-lite-t.pt --blurratio 50 --device cpu --source SmileFaces.jpg
+
+### input
+
+![SmileFaces_input](https://github.com/dhun0103/opensw23-JJJJ/assets/50978743/316a6a93-ccda-41f0-b094-aa77f23d9244)
+
+### output
+
+![SmileFaces_output](https://github.com/dhun0103/opensw23-JJJJ/assets/50978743/41b4a7f7-5a14-434a-a2ff-60ba2cf04352)
 
 # Presentation

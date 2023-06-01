@@ -38,6 +38,31 @@ https://github.com/FareedKhan-dev/yolov7-face-blur
 
 # Results
 
+## Sample Input&Output
+
+All samples located in `.../opensw23-JJJJ/samples`
+
+input model
+
+    yolov7-lite-t.pt
+
+input source 
+
+    SmileFaces.jpg
+
+Input Command
+
+    python detect.py --weights yolov7-lite-t.pt --blurratio 50 --device cpu --source SmileFaces.jpg
+    
+
+### input
+
+![SmileFaces_input](https://github.com/dhun0103/opensw23-JJJJ/assets/50978743/316a6a93-ccda-41f0-b094-aa77f23d9244)
+
+### output
+
+![SmileFaces_output](https://github.com/dhun0103/opensw23-JJJJ/assets/50978743/41b4a7f7-5a14-434a-a2ff-60ba2cf04352)
+
 
 # Analysis/Visualization
 
@@ -148,30 +173,5 @@ If you run the code, output may located in
 
     .../opensw23-JJJ/runs/detect/...
 
-
-## Sample Input&Output
-
-All samples located in `.../opensw23-JJJJ/samples`
-
-input model
-
-    yolov7-lite-t.pt
-
-input source 
-
-    SmileFaces.jpg
-
-Input Command
-
-    python detect.py --weights yolov7-lite-t.pt --blurratio 50 --device cpu --source SmileFaces.jpg
-    
-
-### input
-
-![SmileFaces_input](https://github.com/dhun0103/opensw23-JJJJ/assets/50978743/316a6a93-ccda-41f0-b094-aa77f23d9244)
-
-### output
-
-![SmileFaces_output](https://github.com/dhun0103/opensw23-JJJJ/assets/50978743/41b4a7f7-5a14-434a-a2ff-60ba2cf04352)
 
 # Presentation

@@ -33,7 +33,7 @@ Role : Coder
 선정 프로젝트:
 https://github.com/FareedKhan-dev/yolov7-face-blur
 
-선정한 프로젝트는 학습된 pytorch 모델을 이용하여 input으로 들어온 이미지나 비디오의에서 얼굴을 detect하여 blur처리 한 결과를 output으로 만드는 코드입니다.
+선정한 프로젝트는 학습된 pytorch 모델을 이용하여 input으로 들어온 이미지나 비디오에서의 얼굴을 detect하여 blur처리한 결과를 output으로 만드는 코드입니다.
 
 
 # Results
@@ -74,7 +74,7 @@ python 3.9.X ( 원 프로젝트는 3.9.0을 요구하였음)
 
 1. (Option) Create Virtual Environment of Python and Activate the Environment.
 
-( Recommended, If you don’t want to disturb python packages)
+(Recommended, If you don’t want to disturb python packages)
 
 python3 -m venv yolov7objblurring
 
@@ -94,7 +94,7 @@ pip install -r requirements.txt
 
 pip install -r requirements_gpu.txt (To use GPU, Not Tested)
 
-5. 실행할 모델을 준비합니다. 아래 표는 출처 프로젝트에서 가져왔으며 사용 자체는 아무 모델을 사용하여도 상관 없습니다.
+5. 실행할 모델을 준비합니다. 아래 표는 출처 프로젝트에서 가져왔으며 사용 자체는 어떠한 모델을 사용하여도 상관없습니다.
 
 ## 실행과정
 
@@ -116,7 +116,7 @@ Terminal 또는 bash가 해당 경로에 있도록 설정해줍니다
 
 …/opensw23-JJJJ
 
-아래 코드는 실행 예시 코드 입니다. model 로 yolov7-lite-t.pt를 사용하였으며 input image로 SmileFaces.jpeg를 사용하였습니다.
+아래 코드는 실행 예시 코드입니다. model 로 yolov7-lite-t.pt를 사용하였으며 input image로 SmileFaces.jpeg를 사용하였습니다.
 
 -----
 

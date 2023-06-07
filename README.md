@@ -178,8 +178,13 @@ If you run the code, output may located in
     .../opensw23-JJJ/runs/detect/...
 
 
+Soure File should be placed in Project Folder
+
+![010820](https://github.com/dhun0103/opensw23-JJJJ/assets/50978743/5d235472-355b-462c-8067-5a48c63b4d3e)
+
 # Presentation
 
 ![2023-1 Kunkuk Univ OpenSrc Project 1_Team_7_Presentation_Thumbnail](https://github.com/dhun0103/opensw23-JJJJ/assets/50978743/0fa71615-0e2e-468c-91d7-e07cd1532f56)
 
-Check out video on this youtube link! : https://youtu.be/afP-kAxbNsc
+Check out video on this youtube link! 
+##### https://youtu.be/afP-kAxbNsc

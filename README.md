@@ -4,36 +4,36 @@
 
 ID : 202111420
 
-Role : Github Expert
+Role : Github Management / PPT Maker
 
 
 2. 주지민
 
 ID : 201911284
 
-Role : Team Leader
+Role : Team Leader / Presenter
 
 
 3. 장동혁
 
 ID : 201911276
 
-Role : Presenter
+Role : Research / Analysis
 
 
 4. 정제원
 
 ID : 201713298
 
-Role : Coder
+Role : Research / Analysis
 
 
 # Topic introduction
 
-선정 프로젝트:
+Our Project Based On :
 https://github.com/FareedKhan-dev/yolov7-face-blur
 
-선정한 프로젝트는 학습된 pytorch 모델을 이용하여 input으로 들어온 이미지나 비디오에서 사람의 얼굴을 detect하여 blur처리한 결과를 output으로 만드는 코드입니다.
+This project uses the `pytorch` model. Detect a person's face from an image or video and blur the detected face.
 
 
 # Results
@@ -66,13 +66,17 @@ Input Command
 
 # Analysis/Visualization
 
+### We analyzed this project by using many other different images and videos
+### If you want to see our analysis, Checkout the video on `Presentation` Section!
+
 
 # Installation
 ---
 
 **Warning!** 
 
-설치 경로에 한글이 포함되어 있다면 정상작동 하지 않으므로 영문으로만 된 경로를 설정하여 설치해주시기 바랍니다.
+##### !설치 경로에 한글이 포함되어 있다면 정상작동 하지 않으므로 영문으로만 된 경로를 설정하여 설치해주시기 바랍니다.
+##### !Use ONLY english path to run project. Other languages are not guranteed.
 
 ---
 Original Introduction
@@ -91,7 +95,7 @@ git(Updated)
 
 pip(Updated)
 
-python 3.9.X ( 원 프로젝트는 3.9.0을 요구하였음)
+python 3.9.X ( Original Project requires 3.9.0 )
 
 If you do not use pip, read 'requirements.txt' and install require packages.
 
@@ -157,7 +161,7 @@ Explain Argument(Original & Korean Translate)
     위 테이블에서 다운로드한 모델을 입력합니다
    
     --bluurratio : to determine the strength of blurring, default value is 20
-    얼마나 blur할 것인지 수치로 결정합니다. 기본값은 20입니다 (0~100)
+    얼마나 blur할 것인지 수치로 결정합니다. 기본값은 20입니다
     
     --hidedetarea
     만약 blur처리된 얼굴 부분의 테두리 표기를 원치 않는다면 이 옵션을 추가하여 입력합니다. 입력하지 않아도 되는 인자 입니다.
@@ -175,3 +179,7 @@ If you run the code, output may located in
 
 
 # Presentation
+
+![2023-1 Kunkuk Univ OpenSrc Project 1_Team_7_Presentation_Thumbnail](https://github.com/dhun0103/opensw23-JJJJ/assets/50978743/0fa71615-0e2e-468c-91d7-e07cd1532f56)
+
+Check out video on this youtube link! : https://youtu.be/afP-kAxbNsc

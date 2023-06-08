@@ -195,3 +195,10 @@ Soure File should be placed in Project Folder
 
 Check out video on this youtube link! 
 ##### https://youtu.be/afP-kAxbNsc
+
+# Bug
+The normal result in mp4 file on model yolov7-lite-t.pt
+![스크린샷 2023-06-08 161405](https://github.com/dhun0103/opensw23-JJJJ/assets/127183136/8ff3c58c-d266-4107-aca8-f75a6b22c3af)
+
+The abnormal result in mp4 file on model yolov7-w6-face.pt
+![스크린샷 2023-06-08 161516](https://github.com/dhun0103/opensw23-JJJJ/assets/127183136/df42dd49-9532-4937-b6e3-411d68dcca52)

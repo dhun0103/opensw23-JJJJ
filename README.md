@@ -81,7 +81,7 @@ Input Command
 
 ---
 Develop Environment
-*Window 10*
+- *Window 10*
 ---
 Original Introduction
 ---

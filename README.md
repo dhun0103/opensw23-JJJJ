@@ -58,10 +58,17 @@ Input Command
 ### input
 
 ![SmileFaces_input](https://github.com/dhun0103/opensw23-JJJJ/assets/50978743/316a6a93-ccda-41f0-b094-aa77f23d9244)
+![object](https://github.com/dhun0103/opensw23-JJJJ/assets/127183136/f3963344-20a9-4ebf-8cab-cc248aecb04f)
+![그림2](https://github.com/dhun0103/opensw23-JJJJ/assets/127183136/08a0b39b-5486-4118-978a-58ba60766d8b)
+https://github.com/dhun0103/opensw23-JJJJ/assets/127183136/e9a0c70a-7ad0-4b23-84a8-0e9a66e89cde
+
 
 ### output
 
 ![SmileFaces_output](https://github.com/dhun0103/opensw23-JJJJ/assets/50978743/41b4a7f7-5a14-434a-a2ff-60ba2cf04352)
+![object](https://github.com/dhun0103/opensw23-JJJJ/assets/127183136/9b23c79a-a5c7-4f03-bbec-742e51445fa2)
+![그림3](https://github.com/dhun0103/opensw23-JJJJ/assets/127183136/088f4ee9-8486-4457-ae43-95d8bf2ed10b)
+https://github.com/dhun0103/opensw23-JJJJ/assets/127183136/1d41f250-8abb-495d-8c82-54723ff75836
 
 
 # Analysis/Visualization

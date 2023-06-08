@@ -55,10 +55,10 @@ Input Command
     python detect.py --weights yolov7-lite-t.pt --blurratio 50 --device cpu --source SmileFaces.jpg
     
 
-### input / output
+### Input / Output
 
-![SmileFaces_input](https://github.com/dhun0103/opensw23-JJJJ/assets/50978743/316a6a93-ccda-41f0-b094-aa77f23d9244)
-![SmileFaces_output](https://github.com/dhun0103/opensw23-JJJJ/assets/50978743/41b4a7f7-5a14-434a-a2ff-60ba2cf04352)
+<img src="https://github.com/dhun0103/opensw23-JJJJ/assets/50978743/316a6a93-ccda-41f0-b094-aa77f23d9244" width="40%">
+<img src="https://github.com/dhun0103/opensw23-JJJJ/assets/50978743/41b4a7f7-5a14-434a-a2ff-60ba2cf04352" width="40%">
 
 <img src="https://github.com/dhun0103/opensw23-JJJJ/assets/127183136/f3963344-20a9-4ebf-8cab-cc248aecb04f" width="40%">
 <img src="https://github.com/dhun0103/opensw23-JJJJ/assets/127183136/9b23c79a-a5c7-4f03-bbec-742e51445fa2" width="40%">
@@ -71,7 +71,33 @@ Input Command
 
 ### We used 19 picture files including png, jpg and 7 mp4 files and we used 14 files in presentation in Youtube.
 ### We analyzed this project by using many other different images and videos.
-### If you want to see our analysis, Checkout the video on `Presentation` Section!
+
+### !\[If you want to see more data testing and Detailed Analysis, Checkout the video on `Presentation` Section\]!
+
+
+#### \*Introduce some result.
+
+##### This two African man picture is input / output.
+
+<img src="https://github.com/dhun0103/opensw23-JJJJ/assets/50978743/c6e26db4-5d00-4144-9c2a-fbb2e37f8089" width="40%">
+<img src="https://github.com/dhun0103/opensw23-JJJJ/assets/50978743/9f94523c-d337-474b-b28b-6686c8b1d9a9" width="40%">
+
+Working well. and black background is created
+
+
+##### All this two fox pictures is Output!
+
+<img src="https://github.com/dhun0103/opensw23-JJJJ/assets/50978743/4542ea85-bc36-462a-bebf-0c11ffe51bc6" width="40%">
+<img src="https://github.com/dhun0103/opensw23-JJJJ/assets/50978743/ab7d47aa-fb56-452b-95a5-e2ec9d10b396" width="40%">
+
+It make some interesting results. More animals in `Presentation`
+
+
+##### We analyzed running time between using model"yolo-lite-t" and model "yolo-w6+TTA".
+
+<img src="https://github.com/dhun0103/opensw23-JJJJ/assets/50978743/c99fe974-0cb5-4c96-af0e-89dc783285f9" width="40%">
+<img src="https://github.com/dhun0103/opensw23-JJJJ/assets/50978743/796d9a1a-faa2-4f80-89ba-46ee6be079ec" width="40%">
+
 
 
 # Installation

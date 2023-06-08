@@ -66,7 +66,8 @@ Input Command
 
 # Analysis/Visualization
 
-### We analyzed this project by using many other different images and videos
+### We used 19 picture files including png, jpg and 7 mp4 files and we used 14 files in presentation in Youtube.
+### We analyzed this project by using many other different images and videos.
 ### If you want to see our analysis, Checkout the video on `Presentation` Section!
 
 
@@ -78,6 +79,9 @@ Input Command
 ##### !설치 경로에 한글이 포함되어 있다면 정상작동 하지 않으므로 영문으로만 된 경로를 설정하여 설치해주시기 바랍니다.
 ##### !Use ONLY english path to run project. Other languages are not guranteed.
 
+---
+Develop Environment
+*Window 10*
 ---
 Original Introduction
 ---

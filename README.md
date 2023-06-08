@@ -60,8 +60,8 @@ Input Command
 ![SmileFaces_input](https://github.com/dhun0103/opensw23-JJJJ/assets/50978743/316a6a93-ccda-41f0-b094-aa77f23d9244)
 ![SmileFaces_output](https://github.com/dhun0103/opensw23-JJJJ/assets/50978743/41b4a7f7-5a14-434a-a2ff-60ba2cf04352)
 
-![object](https://github.com/dhun0103/opensw23-JJJJ/assets/127183136/f3963344-20a9-4ebf-8cab-cc248aecb04f)
-![object](https://github.com/dhun0103/opensw23-JJJJ/assets/127183136/9b23c79a-a5c7-4f03-bbec-742e51445fa2)
+<img src="https://github.com/dhun0103/opensw23-JJJJ/assets/127183136/f3963344-20a9-4ebf-8cab-cc248aecb04f" width="40%">
+<img src="https://github.com/dhun0103/opensw23-JJJJ/assets/127183136/9b23c79a-a5c7-4f03-bbec-742e51445fa2" width="40%">
 
 ![그림2](https://github.com/dhun0103/opensw23-JJJJ/assets/127183136/08a0b39b-5486-4118-978a-58ba60766d8b)
 ![그림3](https://github.com/dhun0103/opensw23-JJJJ/assets/127183136/088f4ee9-8486-4457-ae43-95d8bf2ed10b)
